@@ -1,4 +1,3 @@
-/* === Змінні та скидання стилів === */
 :root {
     --primary-text-color: #212121;
     --secondary-text-color: #757575;
@@ -17,7 +16,6 @@ body {
     margin: 0;
 }
 
-/* Обнулення стандартних стилів */
 h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
@@ -38,7 +36,6 @@ img {
     height: auto;
 }
 
-/* === Основна розмітка === */
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -73,7 +70,6 @@ img {
     overflow: hidden;
 }
 
-/* === Шапка (Header) === */
 .header {
     border-bottom: 1px solid #ECECEC;
     padding: 24px 0;
@@ -92,10 +88,16 @@ img {
     letter-spacing: 0.03em;
     color: var(--accent-color);
     margin-right: 93px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo span {
     color: var(--logo-black);
+}
+
+.logo:hover,
+.logo:focus {
+    color: #188CE8;
 }
 
 .nav {
@@ -141,7 +143,6 @@ img {
     color: var(--accent-color);
 }
 
-/* === Секція Героя (Hero) === */
 .hero {
     background-color: var(--hero-bg-color);
     padding: 200px 0;
@@ -185,7 +186,6 @@ img {
     background-color: #188CE8;
 }
 
-/* === Переваги (Features) === */
 .features {
     padding-bottom: 0;
 }
@@ -225,7 +225,6 @@ img {
     color: var(--secondary-text-color);
 }
 
-/* === Наші роботи (Work) === */
 .work-list {
     display: flex;
     gap: 30px;
@@ -234,6 +233,15 @@ img {
 .work-list > li {
     position: relative;
     flex-basis: calc((100% - 60px) / 3);
+}
+
+.work-list li img {
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.work-list li:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.8);
 }
 
 .work-label {
@@ -252,7 +260,6 @@ img {
     background-color: rgba(47, 48, 58, 0.8);
 }
 
-/* === Команда (Team) === */
 .team {
     background-color: var(--team-bg-color);
 }
@@ -268,6 +275,12 @@ img {
     border-radius: 0px 0px 4px 4px;
     flex-basis: calc((100% - 90px) / 4);
     text-align: center;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-list > li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .team-member-info {
@@ -289,7 +302,6 @@ img {
     color: var(--secondary-text-color);
 }
 
-/* Соцмережі для команди */
 .social-links {
     display: flex;
     justify-content: center;
@@ -315,7 +327,6 @@ img {
     fill: var(--white-color);
 }
 
-/* === Клієнти (Clients) === */
 .clients-list {
     display: flex;
     gap: 30px;
@@ -343,7 +354,6 @@ img {
     fill: var(--accent-color);
 }
 
-/* === Футер (Footer) === */
 .footer {
     background-color: var(--dark-bg-color);
     padding: 60px 0;
@@ -414,7 +424,6 @@ img {
     margin-left: auto;
 }
 
-/* === Модальне вікно === */
 .backdrop {
     position: fixed;
     top: 0;
@@ -426,7 +435,7 @@ img {
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -443,7 +452,7 @@ img {
     max-width: 528px;
     overflow: hidden;
     transform: scale(0.9);
-    transition: transform 0.3s ease;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop:not(.is-hidden) .modal {
@@ -473,6 +482,7 @@ img {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn:hover {
@@ -514,6 +524,15 @@ img {
     margin-top: 3px;
 }
 
+.checkbox-group label a {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-group label a:hover,
+.checkbox-group label a:focus {
+    color: var(--accent-color);
+}
+
 .submit-btn {
     background-color: #2196F3;
     color: white;
@@ -524,9 +543,11 @@ img {
     cursor: pointer;
     display: block;
     margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.submit-btn:hover {
+.submit-btn:hover,
+.submit-btn:focus {
     background-color: #0b7dda;
 }
 
