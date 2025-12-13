@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WebStudio — Портфоліо</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="stye.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__wrap">
+      <a class="logo" href="#">
+        <span class="logo__accent">Web</span>Studio
+      </a>
+
+      <nav class="nav">
+        <a class="nav__link" href="#">Студія</a>
+        <a class="nav__link nav__link--active" href="#">Портфоліо</a>
+        <a class="nav__link" href="#">Контакти</a>
+      </nav>
+
+      <div class="contacts">
+        <a class="contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a class="contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="portfolio">
+      <div class="container">
+        <h1 class="visually-hidden">Портфоліо</h1>
+
+        <div class="filters">
+          <button class="filter filter--active" type="button">Усі</button>
+          <button class="filter" type="button">Веб-сайти</button>
+          <button class="filter" type="button">Додатки</button>
+          <button class="filter" type="button">Дизайн</button>
+          <button class="filter" type="button">Маркетинг</button>
+        </div>
+
+        <ul class="grid">
+          <li class="card">
+            <a class="card__link" href="#">
+              <div class="card__media">
+                <img class="card__img" src="images/portfolio-1.jpg" alt="Технокряк" />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Технокряк</h3>
+                <p class="card__text">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="card">
+            <a class="card__link" href="#">
+              <div class="card__media">
+                <img class="card__img" src="images/portfolio-2.jpg" alt="Постер New Orlean vs Golden Star" />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Постер New Orlean vs Golden Star</h3>
+                <p class="card__text">Дизайн</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="card">
+            <a class="card__link" href="#">
+              <div class="card__media">
+                <img class="card__img" src="images/portfolio-3.jpg" alt="Ресторан Seafood" />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Ресторан Seafood</h3>
+                <p class="card__text">Додаток</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="card">
+            <a class="card__link" href="#">
+              <div class="card__media">
+                <img class="card__img" src="images/portfolio-4.jpg" alt="Проєкт Prime" />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Проєкт Prime</h3>
+                <p class="card__text">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="card">
+            <a class="card__link" href="#">
+              <div class="card__media">
+                <img class="card__img" src="images/portfolio-5.jpg" alt="Проєкт Boxes" />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Проєкт Boxes</h3>
+                <p class="card__text">Додаток</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="card">
+            <a class="card__link" href="#">
+              <div class="card__media">
+                <img class="card__img" src="images/portfolio-6.jpg" alt="Inspiration has no Borders" />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Inspiration has no Borders</h3>
+                <p class="card__text">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="card">
+            <a class="card__link" href="#">
+              <div class="card__media">
+                <img class="card__img" src="images/portfolio-7.jpg" alt="Видання Limited Edition" />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Видання Limited Edition</h3>
+                <p class="card__text">Дизайн</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="card">
+            <a class="card__link" href="#">
+              <div class="card__media">
+                <img class="card__img" src="images/portfolio-8.jpg" alt="Проєкт LAB" />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Проєкт LAB</h3>
+                <p class="card__text">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="card">
+            <a class="card__link" href="#">
+              <div class="card__media">
+                <img class="card__img" src="images/portfolio-9.jpg" alt="Growing Business" />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Growing Business</h3>
+                <p class="card__text">Додаток</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__wrap">
+      <a class="logo logo--footer" href="#">
+        <span class="logo__accent">Web</span>Studio
+      </a>
+
+      <address class="address">
+        <p class="address__line">м. Київ, пр-т Лесі Українки, 26</p>
+        <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a>
+      </address>
+    </div>
+  </footer>
+</body>
+</html>
